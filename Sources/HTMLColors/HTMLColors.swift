@@ -16,7 +16,7 @@ struct HTMLColors_Previews: PreviewProvider {
 
 
 extension Color {
-    static func hex(_ hexCode: String) -> Color {
+    public static func hex(_ hexCode: String) -> Color {
         if (hexCode.count > 7){
             print("Invalid hex code")
             return Color.primary
@@ -65,7 +65,7 @@ extension Color {
         return Color.init(red: red/255, green: green/255, blue: blue/255)
     }
     
-    class HTMLRed {
+    public class HTMLRed {
         static let salmon = Color.hex("#FA8072")
         static let darkSalmon = Color.hex("#E9967A")
         static let lightSalmon = Color.hex("#FFA07A")
@@ -76,7 +76,7 @@ extension Color {
         static let darkRed = Color.hex("#8B0000")
     }
     
-    class HTMLPink {
+    public class HTMLPink {
         static let lightPink = Color.hex("#FFB6C1")
         static let hotPink = Color.hex("#FF69B4")
         static let deepPink = Color.hex("#FF1493")
@@ -84,14 +84,14 @@ extension Color {
         static let lightVioletRed = Color.hex("#DB7093")
     }
     
-    class HTMLOrange {
+    public class HTMLOrange {
         static let coral = Color.hex("#FF7F50")
         static let tomato = Color.hex("#FF6347")
         static let orangeRed = Color.hex("#FF4500")
         static let darkOrange = Color.hex("#FF8C00")
     }
     
-    class HTMLYellow {
+    public class HTMLYellow {
         static let gold = Color.hex("#FFD700")
         static let lightYellow = Color.hex("#FFFFE0")
         static let lemonChiffon = Color.hex("#FFFACD")
@@ -104,7 +104,7 @@ extension Color {
         static let darkKhaki = Color.hex("#BDB76B")
     }
     
-    class HTMLPurple {
+    public class HTMLPurple {
         static let lavender = Color.hex("#E6E6FA")
         static let thistle = Color.hex("#D8BFD8")
         static let plum = Color.hex("#DDA0DD")
@@ -124,7 +124,7 @@ extension Color {
         static let mediumSlateBlue = Color.hex("#7B68EE")
     }
     
-    class HTMLGreen {
+    public class HTMLGreen {
         static let greenYellow = Color.hex("#ADFF2F")
         static let chartreuse = Color.hex("#7FFF00")
         static let lawnGreen = Color.hex("#7CFC00")
@@ -173,7 +173,7 @@ extension Color {
         static let midnightBlue = Color.hex("#191970")
     }
     
-    class HTMLBrown {
+    public class HTMLBrown {
         static let cornsilk = Color.hex("#FFF8DC")
         static let blanchedAlmond = Color.hex("#FFEBCD")
         static let bisque = Color.hex("#FFE4C4")
@@ -193,7 +193,7 @@ extension Color {
         static let maroon = Color.hex("#800000")
     }
     
-    class HTMLWhite {
+    public class HTMLWhite {
         static let snow = Color.hex("#FFFAFA")
         static let honeyDew = Color.hex("#F0FFF0")
         static let mintCream = Color.hex("#F5FFFA")
@@ -212,7 +212,7 @@ extension Color {
         static let mistyRose = Color.hex("#FFE4E1")
     }
     
-    class HTMLGray {
+    public class HTMLGray {
         static let gainsboro = Color.hex("#DCDCDC")
         static let lightGray = Color.hex("#D3D3D3")
         static let silver = Color.hex("#C0C0C0")
